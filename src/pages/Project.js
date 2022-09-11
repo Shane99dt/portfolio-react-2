@@ -29,7 +29,7 @@ const Project = () => {
             </div>
           )}
         </div>
-        <div className="sm:w-[60%] sm:overflow-y-scroll project-images sm:max-h-[500px]">
+        <div className="sm:w-[60%] sm:overflow-y-scroll project-images sm:max-h-[400px]">
           <div className="flex flex-col gap-5">
             {Object.values(project.images).map((image, i) => {
               return (
