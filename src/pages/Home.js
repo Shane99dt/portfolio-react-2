@@ -15,7 +15,7 @@ const Home = () => {
         </H1>
       </section>
       <section className="relative py-10">
-        <H3 className={"text-zinc-900 mb-5"}>Background</H3>
+        <H3 className={"text-zinc-400 mb-5"}>Background</H3>
         <p className="text-gray-400 sm:max-w-[50%]">
           I'm Dushen, currently a student studying fullstack web developing at
           Konexio in Paris. I've done my advanced level examinations in Sri
@@ -36,7 +36,10 @@ const Home = () => {
       </section>
       <div className="py-10">
         <Link to="/projects">
-          <Button buttonText={"checkout my projects"} className="sm:w-[50%]" />
+          <Button
+            buttonText={"checkout my projects"}
+            className="sm:w-[50%] text-gray-400 hover:text-gray-300"
+          />
         </Link>
       </div>
     </Container>

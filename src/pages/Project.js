@@ -4,18 +4,28 @@ import H1 from "../components/H1";
 import ProjectImage from "../components/ProjectImage";
 import projectsTable from "../tables/Projects";
 import Button from "../components/Button";
-// import "../App.css";
+import { useState } from "react";
 
 const Project = () => {
   const params = useParams();
   const { slug } = params;
+  const [view, setView] = useState(false);
   const project = projectsTable.find(
     (projectItem) => projectItem.slug === slug
   );
 
+  const viewImages = () => {
+    if (view) {
+      setView(false);
+    } else {
+      setView(true);
+    }
+    console.log("hello");
+  };
+
   return (
     <Container>
-      <H1>{project.name}</H1>
+      <H1 className="text-gray-300">{project.name}</H1>
       <section className="flex sm:flex-row flex-col gap-10 sm:gap-0">
         <div className="sm:w-[50%] sm:pe-20 sm:h-[500px] sm:pr-3">
           <p className="sm:min-h-[250px] min-h-[150px] text-gray-300 first-letter:uppercase">
@@ -24,12 +34,21 @@ const Project = () => {
           {project.projectLink && (
             <div className="sm:mt-10 mt-5">
               <a href={project.projectLink} target="_blank">
-                <Button buttonText="Checkout the project" />
+                <Button
+                  buttonText="Checkout the project"
+                  className={"text-gray-400 hover:text-gray-300"}
+                />
               </a>
             </div>
           )}
         </div>
-        <div className="sm:w-[60%] sm:overflow-y-scroll project-images sm:max-h-[400px]">
+        <div
+          className={`sm:w-[60%] sm:overflow-y-scroll project-images sm:max-h-[450px] ${
+            view &&
+            "sm:scale-150 sm:absolute sm:top-[50%] sm:translate-y-[-40%] sm:left-[50%] sm:translate-x-[-50%] "
+          }`}
+          onClick={viewImages}
+        >
           <div className="flex flex-col gap-5">
             {Object.values(project.images).map((image, i) => {
               return (
