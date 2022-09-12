@@ -22,12 +22,32 @@ const Projects = [
     projectLink: "https://2048-by-the-best.netlify.app/",
   },
   {
+    slug: "miniblog",
+    name: "miniblog",
+    description:
+      "This project is done using \"fs\", where it helped to modify files with the new information with a request. Creating an article and a category adds the new article or category into the json file. Here in netlify app i've blocked the creating methods for the moment because of an error in heroku. It'll be fully live as soon as i find a solution. ",
+    images: importAll(
+      require.context("../images/miniblog", false, /\.(png|jpe?g|svg)$/)
+    ),
+    projectLink: "https://miniblog-dt.netlify.app/",
+  },
+  {
+    slug: "heroes",
+    name: "heroes",
+    description:
+      "This is a fullstack project which i created except a database. First this project hadn't deployed then with the help of heroku, now it's live.",
+    images: importAll(
+      require.context("../images/heroes", false, /\.(png|jpe?g|svg)$/)
+    ),
+    projectLink: "https://heroes-dt.netlify.app/",
+  },
+  {
     slug: "moovice",
     name: "moovice",
     description:
       "In this project I got an API which is filled with TV series and movies. This is one of my favorite projects, because of the freedom we had while doing this.",
     images: importAll(
-      require.context("../images/moovice", false, /\.(png|jpe?g|svg)$/)
+      require.context("../images/moovice", false, /\.(png|jpg|svg)$/)
     ),
     projectLink: "https://moovice-dt.netlify.app/",
   },

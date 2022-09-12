@@ -28,11 +28,11 @@ const Home = () => {
             className="w-10 inline-block align-middle"
           />
         </p>
-        <div className="sm:absolute sm:right-0 sm:w-[50%] border-2 border-black sm:h-[100%] sm:top-10">
+        {/* <div className="sm:absolute sm:right-0 sm:w-[50%] border-2 border-black sm:h-[100%] sm:top-10">
           <H3 className="sm:absolute sm:top-[45%] sm:transform-y-[-50%] sm:left-[50%] sm:translate-x-[-50%]">
             Skills
           </H3>
-        </div>
+        </div> */}
       </section>
       <div className="py-10">
         <Link to="/projects">
