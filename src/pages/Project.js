@@ -20,7 +20,6 @@ const Project = () => {
     } else {
       setView(true);
     }
-    console.log("hello");
   };
 
   return (
