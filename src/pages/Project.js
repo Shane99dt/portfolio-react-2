@@ -24,7 +24,19 @@ const Project = () => {
 
   return (
     <Container>
-      <H1 className="text-gray-300">{project.name}</H1>
+      <H1 className="text-gray-300 mb-0">{project.name}</H1>
+      <section className="flex flex-row gap-1 mt-2 mb-4 flex-wrap">
+        {project.languages.map((language, i) => {
+          return (
+            <small
+              key={i}
+              className=" px-2 border rounded border-gray-400 text-gray-400"
+            >
+              {language}
+            </small>
+          );
+        })}
+      </section>
       <section className="flex sm:flex-row flex-col gap-10 sm:gap-0">
         <div className="sm:w-[50%] sm:pe-20 sm:h-[500px] sm:pr-3">
           <p className="sm:min-h-[250px] min-h-[150px] text-gray-300 first-letter:uppercase">

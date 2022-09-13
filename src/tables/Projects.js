@@ -9,6 +9,7 @@ const Projects = [
     images: importAll(
       require.context("../images/colors", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "expressJS", "ReactJS", "MYSQL"],
     projectLink: "https://colors-4.netlify.app/",
   },
   {
@@ -19,6 +20,7 @@ const Projects = [
     images: importAll(
       require.context("../images/2048", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "ReactJS"],
     projectLink: "https://2048-by-the-best.netlify.app/",
   },
   {
@@ -29,6 +31,7 @@ const Projects = [
     images: importAll(
       require.context("../images/miniblog", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "expressJS", "ReactJS", "Tailwind"],
     projectLink: "https://miniblog-dt.netlify.app/",
   },
   {
@@ -39,6 +42,7 @@ const Projects = [
     images: importAll(
       require.context("../images/heroes", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "expressJS", "ReactJS", "Tailwind"],
     projectLink: "https://heroes-dt.netlify.app/",
   },
   {
@@ -49,6 +53,7 @@ const Projects = [
     images: importAll(
       require.context("../images/moovice", false, /\.(png|jpg|svg)$/)
     ),
+    languages: ["html/css", "expressJS", "ReactJS", "Tailwind"],
     projectLink: "https://moovice-dt.netlify.app/",
   },
   {
@@ -59,6 +64,7 @@ const Projects = [
     images: importAll(
       require.context("../images/todolistReact", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "ReactJS", "Tailwind"],
     projectLink: "https://todo-list-react-dt.netlify.app/",
   },
   {
@@ -69,6 +75,7 @@ const Projects = [
     images: importAll(
       require.context("../images/pokemon", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "ReactJS", "Bootstrap"],
     projectLink: "https://pokemon-part-1.netlify.app/",
   },
   {
@@ -79,6 +86,7 @@ const Projects = [
     images: importAll(
       require.context("../images/todolistJs", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "JS"],
     projectLink: "https://shane99dt.github.io/toDoList/",
   },
   {
@@ -89,6 +97,7 @@ const Projects = [
     images: importAll(
       require.context("../images/shifumi", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css", "JS", "Bootstrap"],
   },
   {
     slug: "deezer",
@@ -98,6 +107,7 @@ const Projects = [
     images: importAll(
       require.context("../images/deezer", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css"],
   },
   {
     slug: "cuizine",
@@ -107,6 +117,7 @@ const Projects = [
     images: importAll(
       require.context("../images/cuizine", false, /\.(png|jpe?g|svg)$/)
     ),
+    languages: ["html/css"],
   },
 ];
 
