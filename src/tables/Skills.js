@@ -6,6 +6,7 @@ import reactImage from "../images/skills/react.png";
 import sqlImage from "../images/skills/sql-server.png";
 import tailwindImage from "../images/skills/tailwind.png";
 import expressImage from "../images/skills/express.png";
+import phpImage from "../images/skills/php.png";
 
 const Skills = [
   {
@@ -35,6 +36,10 @@ const Skills = [
   {
     name: "Tailwind",
     image: tailwindImage,
+  },
+  {
+    name: "php",
+    image: phpImage,
   },
   // {
   //   name: "mongoDB",

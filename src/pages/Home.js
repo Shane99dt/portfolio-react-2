@@ -55,11 +55,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="sm:py-10 pb-10">
+      <div className="sm:py-10 pb-10 max-w-[50%]">
         <Link to="/projects">
           <Button
             buttonText={"checkout my projects"}
-            className="sm:w-[50%] text-gray-400 hover:text-gray-300"
+            className="text-gray-400 hover:text-gray-300"
           />
         </Link>
       </div>
