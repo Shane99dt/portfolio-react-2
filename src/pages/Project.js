@@ -55,8 +55,7 @@ const Project = () => {
         </div>
         <div
           className={`sm:w-[60%] sm:overflow-y-scroll project-images sm:max-h-[450px] cursor-pointer ${
-            view &&
-            "sm:scale-150 sm:absolute sm:top-[50%] sm:translate-y-[-40%] sm:left-[50%] sm:translate-x-[-50%] "
+            view && "sm:scale-150"
           }`}
           onClick={viewImages}
         >
