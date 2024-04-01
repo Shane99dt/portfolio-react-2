@@ -13,3 +13,95 @@
 .card-project::-webkit-scrollbar-thumb, .project-images::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.hanging-box{
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+
+#Swing{
+  animation: swing 2.5s infinite linear;
+  transform-origin: top;
+  transform-box: fill-box;
+  display: inline-block;
+}
+
+@keyframes swing{
+  0%{
+      transform: rotateZ(-10deg);
+  }
+  50%{
+      transform: rotateZ(10deg);
+  }
+  100%{
+      transform: rotateZ(-10deg);
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 105%;
+}
+
+.swinging-circle{
+  height: 100px;
+  width: 100px;
+  border: 1px  solid black;
+  border-radius: 100%;
+	background-color: rgb(209 213 219);
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.swinging-rope{
+  height: 80px;
+  width: 5px;
+  border: 1px solid rgb(209 213 219);
+  border-top: none;
+  border-bottom: none;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+/* mobile or tablet view */
+@media screen and (max-width: 780px) {
+  .hanging-box{
+    right: 40%;
+    z-index: 9999;
+  }
+
+  .swinging-rope{
+    height: 50px;
+    width: 5px;
+    border: 1px solid black;
+    margin: auto;
+  }
+}

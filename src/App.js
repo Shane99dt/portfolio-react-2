@@ -5,11 +5,13 @@ import Projects from "./pages/Projects";
 import "./App.css";
 import Project from "./pages/Project";
 import Footer from "./components/Footer";
+import SwingingItem from "./components/SwingingItem";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      <SwingingItem />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

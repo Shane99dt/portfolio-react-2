@@ -16,24 +16,32 @@ const Home = () => {
         </H1>
       </section>
       <section className="relative py-10">
-        <H3 className={"text-zinc-400 mb-5"}>Background</H3>
-        <p className="text-gray-400 sm:max-w-[50%]">
-          I'm Dushen, currently a student studying fullstack web developing at
-          Konexio in Paris. I've done my advanced level examinations in Sri
-          lanka and moved to France in 2019. Since then i've studied web
-          developing in my leasure time and i found it very interesting. So I
-          kept learning more & more. <br />
-          So for the last three months( june - august 2022 ) at Konexio i've
-          advanced a lot, where i learnt lots of things.
-          <br /> Apart from that I'm a good cricketer.
-          <img
-            src={cricketImage}
-            alt="cricket"
-            className="w-10 inline-block align-middle"
-          />
-        </p>
+        <H3 className={"text-zinc-400 mb-5 text-2xl"}>Background</H3>
+        <div>
+          <p className="text-gray-400 sm:max-w-[50%] text-xl">
+            I'm Dushen, a junior fullstack web developer. I've done my advanced
+            level examinations in Sri lanka (Equals to BAC Général - Spécialité
+            mathématiques) and moved to France in 2019. Since then i've studied
+            web developing in my leasure time and i found it very interesting.
+            So I kept learning more & more. <br />
+            I've done a course on full stack web developing at KONEXIO, paris (
+            Bac+2 ). Thanks to konexio i'm working full time as a web developer
+            now.
+            <br />
+          </p>
+          <div className="mt-6">
+            <span className="text-gray-400 sm:max-w-[50%] text-xl">
+              Apart from that I'm a good cricketer.
+            </span>
+            <img
+              src={cricketImage}
+              alt="cricket"
+              className="w-10 inline-block align-middle"
+            />
+          </div>
+        </div>
         <div className="mt-[50px] py-10 sm:py-0 sm:mt-0 sm:absolute sm:right-0 sm:w-[50%] sm:h-[100%] sm:top-10 flex flex-col justify-center items-center">
-          <H3 className="mb-2 sm:mb-4 text-gray-400">Skills</H3>
+          <H3 className="mb-2 sm:mb-4 text-gray-400 text-2xl">Skills</H3>
           <div className="flex flex-row justify-center items-center gap-4 flex-wrap">
             {Object.values(Skills).map((skill, i) => {
               return (
@@ -55,7 +63,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="sm:py-10 pb-10 max-w-[50%]">
+      <div className="sm:py-10 pb-10 max-w-[50%] m-auto lg:m-0">
         <Link to="/projects">
           <Button
             buttonText={"checkout my projects"}
