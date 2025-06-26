@@ -10,8 +10,8 @@ const SwingingItem = () => {
             <span className="tooltiptext">Click to download the CV</span>
             <a href={cv} className="duration-500" target="_blank">
               <div className="swinging-circle">
-                Open to work from <br />
-                22/04/2024 or ASAP
+                Open to work ASAP <br />
+                "CV here"
               </div>
             </a>
           </div>
